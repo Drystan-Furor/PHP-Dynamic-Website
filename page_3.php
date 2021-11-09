@@ -28,9 +28,7 @@ require_once 'includes/navmenu.php';
 
 
 
-<?php
-require_once 'elements/login_form.php'; // plaats hier de element
-?>
+<h1>WELKOM</h1>
 
 
 

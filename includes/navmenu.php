@@ -3,7 +3,7 @@
 
 $navigationMenuList = [
     //"index.php" => 'Welkom',
-    "page_1.php" => 'Home',
+    "index.php" => 'Home',
     "page_2.php" => "Login",
     "page_3.php" => "Contact",
 ];

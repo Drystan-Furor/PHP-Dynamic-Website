@@ -1,23 +1,26 @@
 <?php 
 ?>
-<form method="POST" action="werkblad.php">
-<label for="firstname">First name:</label>
-<input type="text" id="firstname" name="firstname" required><br><br>
-<label for="email">email:</label>
-<input type="email" id="email" name="email" required><br><br>
-<label for="message">Message:</label>
-<textarea id="message" name="message" rows="5" cols="50" required>
-    </textarea>
-    <input type="submit" value="Submit" name="submit">
-</form>
+<form action="action_page.php" method="post">
 
+  <div class="login_container">
+    <label for="username"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="username" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="password" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember_login"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="forgotpass">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
 <p>
-<?php echo $report . PHP_EOL; ?><br>
-Uw voornaam is: 
-<?php echo $firstname . PHP_EOL; ?><br>
-Uw achternaam is: 
-<?php echo $email . PHP_EOL; ?><br>
-Uw bericht is: 
-<?php echo $message . PHP_EOL; ?><br>
+
 
 </p>
