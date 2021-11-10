@@ -8,7 +8,7 @@
 *  Created On : Tue Nov 09 2021
 *  File : index.html
 ******************************************* -->
-
+<?php if (is_session_started() === FALSE ) session_start(); ?>
 
 <!-- don't forget to set lang attribute-->
 <html lang="nl">

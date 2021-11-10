@@ -4,7 +4,7 @@
 define('MYSQL_HOST', 'localhost');
 define('MYSQL_PORT', '3307'); // of 3306. in Mamp preferences kun je zien wat het port nummer van de database is.
 define('MYSQL_USERNAME', 'root');
-define('MYSQL_PASSWORD', 'root');
+define('MYSQL_PASSWORD', 'SELECT*B4tr4ch10n');
 
 
 

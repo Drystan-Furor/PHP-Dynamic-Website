@@ -2,16 +2,17 @@
 
 
 // Een database aanmaken. ------- CREATE SCHEMA
-$sql = "CREATE DATABASE IF NOT EXISTS phpcursus";
-if ($databaseConnection->query($sql) === TRUE) {
-    echo "Database created successfully";
-    echo '<br>';
-} else {
-    $error = "Error creating database: " . $conn->error;
-    echo $error;
-    echo '<br>';
-    error_log($error);
-}
+
+    $sql = "CREATE DATABASE IF NOT EXISTS phpcursus";
+    if ($databaseConnection->query($sql) === TRUE) {
+        echo "Database created successfully";
+        echo '<br>';
+    } else {
+        $error = "Error creating database: " . $conn->error;
+        echo $error;
+        echo '<br>';
+        error_log($error);
+    }
 
 
 
