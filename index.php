@@ -26,12 +26,16 @@ require_once 'includes/navmenu.php';
 ?>
 <!-- navigation file -->
 
+<h1>
+    Welkom
+</h1>
 
-
-<?php
-require_once 'elements/login_form.php'; // plaats hier de element
-?>
-
+<p>
+    Dit is een huiswerkopdracht voor een PHP cursus. <br>
+    Doel is een dynamische website die ook contact kan leggen met een database.<br>
+    Ga naar de login pagina va het menu voor een login poging, <br>
+    Of ga naar Contact om te proberen een email te versturen.
+</p>
 
 
 <!-- footer file -->

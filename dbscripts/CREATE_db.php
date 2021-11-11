@@ -2,17 +2,16 @@
 
 
 // Een database aanmaken. ------- CREATE SCHEMA
-
-    $sql = "CREATE DATABASE IF NOT EXISTS phpcursus";
-    if ($databaseConnection->query($sql) === TRUE) {
-        echo "Database created successfully";
-        echo '<br>';
-    } else {
-        $error = "Error creating database: " . $conn->error;
-        echo $error;
-        echo '<br>';
-        error_log($error);
-    }
+$sql = "CREATE DATABASE IF NOT EXISTS phpcursus";
+if ($databaseConnection->query($sql) === TRUE) {
+    echo "Database created successfully";
+    echo '<br>';
+} else {
+    $error = "Error creating database: " . $conn->error;
+    echo $error;
+    echo '<br>';
+    error_log($error);
+}
 
 
 
@@ -21,10 +20,11 @@
 $databaseConnection->select_db("phpcursus");
 // Een database tabel aanmaken.
 $sql = "CREATE TABLE IF NOT EXISTS contacts (
-    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY,
     firstname VARCHAR(30) NOT NULL,
     lastname VARCHAR(30) NOT NULL,
     email VARCHAR(50),
+    pass VARCHAR(16),
     created TIMESTAMP DEFAULT CURRENT_TIMESTAMP
     )";
 

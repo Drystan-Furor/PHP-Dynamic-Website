@@ -13,7 +13,7 @@ if (is_session_started() === false ) { // start een sessie tenzij een sessie al 
 
 
 <!-- header file -->
-<?php $title = 'HOME';
+<?php $title = 'LOGIN';
 require_once 'includes/header.php'; // plaats hier de header file
 ?>
 <!-- header file -->
@@ -29,7 +29,9 @@ require_once 'includes/navmenu.php';
 
 
 <h1>WELKOM</h1>
-
+<?php
+require_once 'elements/login_form.php'; // plaats hier de element
+?>
 
 
 <!-- footer file -->
