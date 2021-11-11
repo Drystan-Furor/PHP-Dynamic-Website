@@ -4,7 +4,7 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <!-- ******************************************
-*  Author : Author   
+*  Author : Tristan Arts   
 *  Created On : Tue Nov 09 2021
 *  File : index.html
 ******************************************* -->
