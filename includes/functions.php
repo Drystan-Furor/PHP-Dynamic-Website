@@ -3,7 +3,7 @@
 /**
  Create a function that will do all the checking for us
  */
-function Test_input($data) 
+function Test_input($data)
 {
     $data = trim($data);
     $data = stripslashes($data);
@@ -12,19 +12,22 @@ function Test_input($data)
 }
 
 /**
-* @return bool
-*/
+ * @return bool
+ */
 function is_session_started()
 {
-    if ( php_sapi_name() !== 'cli' ) {
-        if ( version_compare(phpversion(), '5.4.0', '>=') ) {
-            return session_status() === PHP_SESSION_ACTIVE ? TRUE : FALSE;
+    if (php_sapi_name() !== 'cli') {
+        if (version_compare(phpversion(), '5.4.0', '>=')) {
+            return session_status() === PHP_SESSION_ACTIVE ? true : false;
         } else {
-            return session_id() === '' ? FALSE : TRUE;
+            return session_id() === '' ? false : true;
         }
     }
-    return FALSE;
+    return false;
 }
 
 // Example
-//if ( is_session_started() === FALSE ) session_start();
+/*
+if (is_session_started() === false ) { // start een sessie tenzij een sessie al loopt.
+    session_start();
+}   */

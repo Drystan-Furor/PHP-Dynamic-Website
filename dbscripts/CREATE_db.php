@@ -3,13 +3,11 @@
 
 // Een database aanmaken. ------- CREATE SCHEMA
 $sql = "CREATE DATABASE IF NOT EXISTS phpcursus";
-if ($databaseConnection->query($sql) === TRUE) {
-    echo "Database created successfully";
-    echo '<br>';
+if ($databaseConnection->query($sql) === true) {
+    $activity = "Database created successfully";
 } else {
     $error = "Error creating database: " . $conn->error;
-    echo $error;
-    echo '<br>';
+    $activity = $error;
     error_log($error);
 }
 
@@ -29,11 +27,9 @@ $sql = "CREATE TABLE IF NOT EXISTS contacts (
     )";
 
 if ($databaseConnection->query($sql) === TRUE) {
-    echo "Table created successfully";
-    echo '<br>';
+    $activity2 = "Table created successfully";
 } else {
     $error = "Error creating table: " . $databaseConnection->error;
-    echo $error;
-    echo '<br>';
+    $activity2 = $error;
     error_log($error);
 }

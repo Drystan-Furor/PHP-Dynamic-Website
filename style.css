@@ -97,3 +97,11 @@ span.forgotpass {
         width: 100%;
     }
 }
+
+.container_activity {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid black;
+    padding: 10px;
+}
